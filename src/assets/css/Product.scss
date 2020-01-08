@@ -1,0 +1,79 @@
+.productWarpper{
+    width: 100%;
+    background: #fff;
+}
+.titleTab{
+    width: 1200px;
+    height: 150px;
+    display: flex;
+    padding: 0 0 0 6px;
+    margin: 0 auto;
+    position: relative;
+    .tabLi{
+        height: 85px;
+        padding: 0 77px 0 0;
+        color: rgba(153, 153, 153, 1);
+        font-size: 24px;
+        text-align: center;
+        font-family: PingFang-SC-Medium;
+        line-height: 85px;
+        position: relative;
+        a{
+            color: rgba(153, 153, 153, 1);
+        }
+        &.active{
+            color: rgba(91, 121, 255, 1);
+            a{
+                color: rgba(91, 121, 255, 1);
+            }
+        }
+    }
+    .tabLi1{
+        cursor: pointer;
+    }
+    .list{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        li{
+            width: 240px;
+            height: 65px;
+            color: rgba(153, 153, 153, 1);
+            font-size: 20px;
+            text-align: center;
+            line-height: 65px;
+            font-family: PingFang-SC-Medium;
+            position: relative;
+            cursor: pointer;
+            a{
+                color: rgba(153, 153, 153, 1);
+                &.active{
+                    color: rgba(91, 121, 255, 1);
+                }
+            }
+            &:after{
+                content: '';
+                width: 1px;
+                height: 40px;
+                background: rgba(202, 202, 202, 1);
+                position: absolute;
+                right: 0;
+                top: 50%;
+                margin-top: -20px;
+            }
+           
+            &:nth-child(5n+5){
+                &:after{
+                    display: none;
+                }
+            }
+        }
+    }
+    
+}
+.content{
+    width: 100%;
+}

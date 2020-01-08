@@ -1,0 +1,93 @@
+.informationWarpper{
+    width: 100%;
+    .container{
+        width: 1200px;
+        padding: 36px 25px 36px 43px;
+        margin: 40px auto 0;
+        background: #ffffff;
+    }
+    ul{
+        width: 100%;
+    }
+    li{
+        width: 100%;
+        display: flex;
+        border-bottom: 2px solid rgba(202,202,202,1);
+        padding: 55px 0 68px 0;
+        justify-content: space-between;
+        a{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            padding: 55px 0 68px 0;
+        }
+        img{
+            display: block;
+            width: 330px;
+            height: 201px;
+        }
+        .userInfo{
+            width: 750px;
+        }
+        h1{
+            width: 100%;
+            color: rgba(0, 0, 0, 1);
+            font-size: 28px;
+            text-align: left;
+            font-family: PingFang-SC-Medium;
+            line-height: 40px;
+        }
+        h6{
+            width: 751px;
+            line-height: 25px;
+            color: rgba(153, 153, 153, 1);
+            font-size: 16px;
+            text-align: left;
+            font-family: PingFangSC-Regular;
+            margin-top: 19px;
+        }
+        .timeBox{
+            margin-top: 48px;
+            display: flex;
+            align-items: center;
+            i{
+                display: block;
+                width: 17px;
+                height: 15px;
+            }
+            span{
+                height: 25px;
+                color: rgba(155, 155, 155, 1);
+                font-size: 18px;
+                text-align: left;
+                font-family: PingFang-SC-Medium;
+            }
+        }
+    }
+    .pageFlipper{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        margin-top: 40px;
+        align-items: center;
+        justify-content: center;
+        .prev,.next{
+            width: 20px;
+            height: 30px;
+            margin: 0 7.5px;
+        }
+        span{
+            display: block;
+            height: 30px;
+            color: rgba(202, 202, 202, 1);
+            font-size: 26px;
+            text-align: left;
+            font-family: Roboto-Regular;
+            margin: 0 12.5px;
+            &.active{
+                color: rgba(51,51,51,1);
+            }
+        }
+    }
+}
