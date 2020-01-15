@@ -1,214 +1,185 @@
-.JoinInWarpper{
+$img: "../images";
+.JoinInWarpper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3.32rem;
+  background: #fafafa url($img+"/anli/bg.png") no-repeat top center/100%;
+  .jmBtn {
+    width: 0.84rem;
+    height: 0.36rem;
+    background: #fff;
+    border: 0.04rem;
+    text-align: center;
+    line-height: 0.36rem;
+    color: rgba(91, 121, 255, 1);
+    font-size: 0.14rem;
+    font-family: Avenir-Book;
+    margin-bottom: 1.3rem;
+    border-radius: 0.04rem;
+  }
+  .model {
     width: 100%;
-    .title{
+    margin-bottom: 0.15rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.23rem 0 0.4rem;
+    h1 {
+      width: 100%;
+      line-height: 0.24rem;
+      color: rgba(91, 121, 255, 1);
+      font-size: 0.2rem;
+      text-align: center;
+      font-family: PingFangSC-Regular;
+    }
+    .swiperBox {
+      width: 100%;
+      height: 2.07rem;
+      .swiper-container {
         width: 100%;
-        height: 530px;
-        padding-top: 140px;
-        background: #4f91f6;
-        .center{
-            width: 100%;
-            margin: 0 auto;
+        height: 100%;
+      }
+      .swiper-wrapper {
+        align-items: center;
+      }
+      .swiper-slide {
+        width: 1.51rem !important;
+        height: 2.07rem;
+        padding: 0.12rem 0.1rem !important;
+        .contentBox {
+          width: 100%;
+          height: 100%;
+          padding: 0.38rem 0.06rem 0.1rem;
+          background: #fff;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          box-shadow:0px .07rem .26rem 0px rgba(188,188,188,0.57);
         }
-        h1{
-            width: 100%;
-            height: 75px;
-            color: rgba(255, 255, 255, 1);
-            font-size: 54px;
-            text-align: center;
-            font-family: PingFangSC-Regular;
+        img {
+          display: block;
+          width: 0.6rem;
+          height: 0.6rem;
         }
-        h6{
-            margin-top: 29px;
-            width: 100%;
-            height: 33px;
-            color: rgba(255, 255, 255, 1);
-            font-size: 24px;
-            text-align: center;
-            font-family: PingFangSC-Regular;
+        h2 {
+          width: 100%;
+          font-size: 0.14rem;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: rgba(51, 51, 51, 1);
+          line-height: 0.25rem;
+          margin-top: 0.08rem;
+          display: none;
+          text-align: center;
         }
-        .button{
-            margin: 77px auto 0;
-            display: block;
-            width: 84px;
-            height: 36px;
-            border-radius: 4px;
-            background-color: rgba(255, 255, 255, 1);
-            line-height: 36px;
-            color: rgba(91, 121, 255, 1);
-            font-size: 14px;
-            text-align: center;
-            font-family: Avenir-Book;
+        h3 {
+          margin-top: 0.12rem;
+          width: 100%;
+          font-size: .20rem;
+          font-family: PingFang-SC-Medium, PingFang-SC;
+          font-weight: 500;
+          color: rgba(0, 0, 0, 1);
+          line-height: .28rem;
+          text-align: center;
+        }
+      }
 
+      .swiper-slide-active,
+      .swiper-slide-duplicate-active {
+        // width: 1.51rem !important;
+        // height: 2.07rem;
+        // margin: 0 0.2rem;
+        padding: 0 0.1rem !important;
+        .contentBox{
+          padding-top: .34rem;
+          border-bottom: 7px solid rgba(91, 121, 255, 1);
         }
+        h2{
+          display: block;
+        }
+        h3{
+          margin-top: .05rem;
+        }
+      }
     }
-    .content{
-        width: 100%;
+  }
+  .model1{
+    padding: .3rem 0 .5rem;
+    background: #fafafa;
+  }
+  .model2 {
+    padding: .23rem 0 0 0;
+    img {
+      width: 3.15rem;
+      height: 3.18rem;
+      margin-top: .15rem;
     }
-    .model{
-        width: 100%;
-        .center{
-            width: 1200px;
-            margin: 0 auto;
-        }
-        h1{
-            width: 100%;
-            height: 24px;
-            line-height: 24px;
-            color: rgba(91, 121, 255, 1);
-            font-size: 34px;
-            text-align: center;
-            font-family: PingFangSC-Regular;
-            position: relative;
-            &:after{
-                content:'';
-                position: absolute;
-                width: 44px;
-                height: 3px;
-                background: rgba(91, 121, 255, 1);
-                bottom: -20px;
-                left: 50%;
-                margin-left: -22px;
-            }
-        }
+    .textBox{
+      width: 100%;
+      height: 1.45rem;
+      margin-top: -.85rem;
+      padding: .2rem .34rem .1rem;
+      background: #fff;
     }
-    .model1{
-        .center{
-            padding: 34px 0 24px 0;
-        }
-        .swiperBox{
-            width: 1108px;
-            height: 275px;
-            margin: 47px auto 0;
-            position: relative;
-            .swiper-container ,.swiper-wrapper,.swiper-slide{
-                width: 100%!important;
-                height: 100%;
-                align-items: center;
-            }  
-            .swiper-slide {
-                width: 178px!important;
-                height: 243px;
-                text-align: center;
-                font-size: 18px;
-                background: #fff;
-          
-                /* Center slide text vertically */
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: -webkit-flex;
-                display: flex;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                -webkit-justify-content: center;
-                justify-content: center;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                -webkit-align-items: center;
-                align-items: center;
-                transition: 300ms;
-                transform: scale(0.8);
-              }
-              .swiper-slide-active,.swiper-slide-duplicate-active{
-                width: 200px!important;
-                height: 275px;
-              }
-          
-            .swiper-pagination{
-                width: 100%;
-                position: absolute;
-                left: 0;
-                bottom: 20px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            img{
-                display: block;
-                width: 100%;
-                height: 100%;
-            }
-            .swiper-pagination-bullet{
-                width: 8px;
-                height: 8px;
-                border-radius: 4px;
-                margin: 0 5px;
-                background-color: rgb(221,221,221);
-                opacity: 1;
-            }
-            .swiper-pagination-bullet-active{
-                background-color: rgb(51,51,51);
-            }
-            .swiper-button-prev{
-                position: absolute;
-                left: -44px;
-            }
-            .swiper-button-next{
-                position: absolute;
-                right: -44px;
-            }
-        }
+    h2 {
+      width: 3.05rem;
+      line-height: 0.24rem;
+      color: rgba(91, 121, 255, 1);
+      font-size: 0.2rem;
+      text-align: left;
+      font-family: PingFangSC-Regular;
+      position: relative;
+      margin-bottom: .26rem;
+      &:after {
+        content: "";
+        width: 0.18rem;
+        height: 0.02rem;
+        background: #5b79ff;
+        position: absolute;
+        bottom: -0.12rem;
+        left: 0;
+      }
     }
-    .model2{
-        .center{
-            padding: 34px 0 36px 0;
-        }
-        .tabBox{
-            width: 1216px;
-            margin: 56px auto 0;
-            display: flex;
-        }
-        .list1{
-            width: 242px;
-            height: 600px;
-            li{
-                width: 100%;
-                height: 150px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                background: #5B79FF;
-                &.active{
-                    background: #FFFFFF;
-                    p{
-                        color: rgba(0,0,0,1);
-                    }
-                }
-            }
-            img{
-                display: block;
-                width: 64px;
-                height: 64px;
-                border: 50%;
-                border: 1px solid #000;
-            }
-            p{
-                width: 100%;
-                height: 32px;
-                color: rgba(255, 255, 255, 1);
-                font-size: 23px;
-                text-align: center;
-                margin-top: 10px;
-                font-family: PingFang-SC-Medium;
-            }
-        }
-        .list2{
-            flex: 1;
-            li{
-                width: 100%;
-                height: 100%;
-                display: none;
-                &.active{
-                    display: block;
-                }
-            }
-        }
+    h6 {
+      width: 3.05rem;
+      line-height: 0.24rem;
+      color: rgba(153, 153, 153, 1);
+      font-size: 0.14rem;
+      text-align: left;
+      font-family: PingFangSC-Regular;
     }
-    .model3{
-        width: 100%;
-        height: 677px;
-        background: #00adff;
-        margin-top: 45px;
+    ul {
+      width: 100%;
+      height: 0.5rem;
+      background: #5b79ff;
+      margin-top: 0.1rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      li {
+        height: 100%;
+        line-height: 0.5rem;
+        color: #fff;
+        font-size: 0.16rem;
+        position: relative;
+        &.active {
+          line-height: 0.4rem;
+          font-size: 0.2rem;
+          &:after {
+            content: "";
+            width: 0.18rem;
+            height: 0.03rem;
+            background: #fff;
+            position: absolute;
+            bottom: 0.1rem;
+            left: 50%;
+            margin-left: -0.09rem;
+          }
+        }
+      }
     }
-    
+  }
 }

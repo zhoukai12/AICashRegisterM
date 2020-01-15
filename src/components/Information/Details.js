@@ -19,19 +19,15 @@ class Details extends Component {
     render() { 
         return ( 
             <div className='informationDetails'>
-                <div className="container">
-                    <div className='goback' onClick={this.goBack.bind(this)}>&lt; AI吧资讯</div>
-                    <div className="content">
-                        <h1>AI吧收银与支付宝、微信平台签约</h1>
-                        <div className="timeBox">
-                            <i></i>
-                            <span>2019-07-10 11:00:00</span>
-                        </div>
-                        <div className="line"></div>
-                        <img src="" alt=""/>
-                        <p> 现在的大多数人都是手机离不开手，几乎已经长成了许多人身体的一部分。出门什么都能不带，手机必须寸步不离。独自在外什么都不担心，就担心手机和充电宝全部耗尽。5G来袭，移动支付行业会有哪些动向？</p>
-                        <img src="" alt=""/>
+                <div className="titleBox">
+                    <h1>5G劲爆来袭，移动支付迎来创业投资新风口</h1>
+                    <div className="timeBox">
+                        <i></i>
+                        <span>2018.01.01</span>
                     </div>
+                </div>
+                <div className="textBox">
+                    <p>春天来了，但是不确定是不是一个好的春天，确实学习UI设计的人很多，但是方向基本都是应用UI不管是应用UI还是游戏UI至少都是UI但是并不是每个人都可以成为UI设计师，游戏很多人都爱好的吧,各种死宅们。  春天来了，但是不确定是不是一个好的春天，确实学习UI设计的人很多，但是方向基本都是应用不管是应用UI还是游戏UI至少都是UI但是并不是每个人都可以成为UI设计师或者说游戏UI。因为游戏UI设计对于应用设计的就业面都是很小。诚筑说小编整理一下很正经的内容。  春天来了，但是不确定是不是一个好的春天，确实学习UI设计的人很多，但是方向基本都是应用不管是应用UI还是游戏UI至少都是UI但是并不是每个人都可以成为UI设计师或者说游戏UI。</p>
                 </div>
             </div>
          );

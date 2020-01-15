@@ -1,93 +1,69 @@
-.informationWarpper{
+$img: '../images';
+.informationWarpper {
+  width: 100%;
+  min-height: calc(100vh - 0.44rem - 3.61rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  ul {
+    width: 3.55rem;
+  }
+  li {
     width: 100%;
-    .container{
-        width: 1200px;
-        padding: 36px 25px 36px 43px;
-        margin: 40px auto 0;
-        background: #ffffff;
+    padding: 0 0 0.15rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.17rem;
+    background: #ffffff;
+    img {
+      display: block;
+      width: 100%;
     }
-    ul{
-        width: 100%;
+    .userInfo{
+      width: 3.25rem;
+      margin: 0.25rem auto 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    li{
-        width: 100%;
-        display: flex;
-        border-bottom: 2px solid rgba(202,202,202,1);
-        padding: 55px 0 68px 0;
-        justify-content: space-between;
-        a{
-            display: flex;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            padding: 55px 0 68px 0;
-        }
-        img{
-            display: block;
-            width: 330px;
-            height: 201px;
-        }
-        .userInfo{
-            width: 750px;
-        }
-        h1{
-            width: 100%;
-            color: rgba(0, 0, 0, 1);
-            font-size: 28px;
-            text-align: left;
-            font-family: PingFang-SC-Medium;
-            line-height: 40px;
-        }
-        h6{
-            width: 751px;
-            line-height: 25px;
-            color: rgba(153, 153, 153, 1);
-            font-size: 16px;
-            text-align: left;
-            font-family: PingFangSC-Regular;
-            margin-top: 19px;
-        }
-        .timeBox{
-            margin-top: 48px;
-            display: flex;
-            align-items: center;
-            i{
-                display: block;
-                width: 17px;
-                height: 15px;
-            }
-            span{
-                height: 25px;
-                color: rgba(155, 155, 155, 1);
-                font-size: 18px;
-                text-align: left;
-                font-family: PingFang-SC-Medium;
-            }
-        }
+    h1 {
+      width: 3.25rem;
+      line-height: 0.24rem;
+      color: rgba(51, 51, 51, 1);
+      font-size: 0.18rem;
+      text-align: left;
+      font-family: PingFangSC-Regular;
     }
-    .pageFlipper{
-        width: 100%;
-        height: 30px;
-        display: flex;
-        margin-top: 40px;
-        align-items: center;
-        justify-content: center;
-        .prev,.next{
-            width: 20px;
-            height: 30px;
-            margin: 0 7.5px;
-        }
-        span{
-            display: block;
-            height: 30px;
-            color: rgba(202, 202, 202, 1);
-            font-size: 26px;
-            text-align: left;
-            font-family: Roboto-Regular;
-            margin: 0 12.5px;
-            &.active{
-                color: rgba(51,51,51,1);
-            }
-        }
+    h6 {
+      width: 3.25rem;
+      line-height: 0.24rem;
+      color: rgba(153, 153, 153, 1);
+      font-size: 0.12rem;
+      text-align: left;
+      font-family: PingFangSC-Regular;
+      margin-top: 0.1rem;
     }
+    .timeBox {
+      width: 3.25rem;
+      margin-top: 0.17rem;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      i {
+        display: block;
+        width: 0.12rem;
+        height: 0.12rem;
+        margin-right: 0.05rem;
+        background: url($img +'/zixun/time.png')no-repeat center/100%;
+      }
+      span {
+        line-height: .1rem;
+        color: rgba(205, 207, 207, 1);
+        font-size: .1rem;
+        text-align: left;
+        font-family: PingFangSC-Regular;
+      }
+    }
+  }
 }

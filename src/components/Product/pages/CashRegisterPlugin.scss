@@ -1,170 +1,75 @@
+$img: '../../../assets/images';
 .CashRegisterPluginWarpper{
     width: 100%;
-    .title{
-        width: 100%;
-        height: 520px;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3.62rem;
+    background: url($img +'/chanpin/chanpin4_1.png')no-repeat top center/100%;
     .model{
-        width: 100%;
-        .center{
-            width: 1200px;
-            margin: 0 auto;
+        width: 3.55rem;
+        padding: .2rem 0 .16rem 0;
+        margin-bottom: .15rem;
+        display: flex;
+        flex-direction: column;
+        background: #ffffff;
+        border-radius: .04rem;
+        align-items: center;
+        h1{
+            width: 100%;
+            line-height: .24rem;
+            color: rgba(91, 121, 255, 1);
+            font-size: .2rem;
+            text-align: center;
+            font-family: PingFangSC-Regular;
+            position: relative;
+            &:after{
+                width: .18rem;
+                height: .02rem;
+                background: #5B79FF;
+                content: '';
+                position: absolute;
+                bottom: -.09rem;
+                left: 50%;
+                margin-left: -.09rem;
+            }
+        }
+        h6{
+            width: 3.24rem;
+            line-height: 24px;
+            color: rgba(51, 51, 51, 1);
+            font-size: .14rem;
+            text-align: center;
+            font-family: PingFangSC-Regular;
+            margin-top: .19rem;
+        }
+        img{
+            display: block;
+            margin-top: .15rem;
         }
     }
     .model1{
-        margin-top: -450px;
-        h1{
-            width: 100%;
-            color: rgba(0, 0, 0, 1);
-            font-size: 54px;
-            text-align: center;
-            font-family: PingFangSC-Regular;
+        .img1{
+            width: 2.15rem;
+            margin-top: .1rem;
         }
-        h6{
-            width: 100%;
-            height: 33px;
-            color: rgba(51, 51, 51, 1);
-            font-size: 24px;
-            text-align: center;
-            font-family: PingFangSC-Regular;
-            margin-top: 27px;
-        }
-        img{
-            display: block;
-            width: 974px;
-            height: 538px;
-            margin: 24px auto 0;
+        .img2{
+            width: 1.31rem;
+            margin-top: .1rem;
         }
     }
     .model2{
-        .center{
-            padding-top: 32px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+        padding-bottom: .5rem;
         img{
-            display: block;
-            width: 512px;
-            height: 514px;
-        }
-        .textInfo{
-            width: 429px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        h1{
-            width: 100%;
-            line-height: 44px;
-            color: rgba(91, 121, 255, 1);
-            font-size: 34px;
-            text-align: left;
-            font-family: PingFangSC-Regular;
-            position: relative;
-            &:after{
-                content: '';
-                position: absolute;
-                width: 44px;
-                height: 2px;
-                background: rgba(91, 121, 255, 1);
-                left: 0;
-                bottom: -17px;
-            }
-        }
-        h6{
-            width: 100%;
-            line-height: 35px;
-            color: rgba(51, 51, 51, 1);
-            font-size: 16px;
-            text-align: left;
-            font-family: PingFangSC-Regular;
-            margin-top: 40px;
-        }
-        .iconBox{
-            display: flex;
-            margin-top: 25px;
-            align-items: center;
+            width: 3.43rem;
+            margin-top: .46rem;
         }
     }
     .model3{
-        width: 100%;
-        .center{
-            padding-top: 60px;
-        }
-        h1{
-            width: 100%;
-            line-height: 24px;
-            color: rgba(91, 121, 255, 1);
-            font-size: 34px;
-            text-align: center;
-            font-family: PingFangSC-Regular;
-            position: relative;
-            &:after{
-                content: '';
-                width: 44px;
-                height: 2px;
-                background: rgba(91,121,255,1);
-                position: absolute;
-                left: 50%;
-                margin-left: -22px;
-                bottom: -15px;
-            }
-        }
-        h6{
-            margin-top: 38px;
-            width: 100%;
-            line-height: 35px;
-            color: rgba(51, 51, 51, 1);
-            font-size: 16px;
-            text-align: center;
-            font-family: PingFangSC-Regular;
-        }
+        padding-bottom: .5rem;
         img{
-            display: block;
-            width: 700px;
-            height: 500px;
-            margin: 50px auto 0;
-        }
-    }
-    .model4{
-        width: 100%;
-        .center{
-            padding-top: 60px;
-        }
-        h1{
-            width: 100%;
-            line-height: 24px;
-            color: rgba(91, 121, 255, 1);
-            font-size: 34px;
-            text-align: center;
-            font-family: PingFangSC-Regular;
-            position: relative;
-            &:after{
-                content: '';
-                width: 44px;
-                height: 2px;
-                background: rgba(91,121,255,1);
-                position: absolute;
-                left: 50%;
-                margin-left: -22px;
-                bottom: -15px;
-            }
-        }
-        h6{
-            margin-top: 38px;
-            width: 100%;
-            line-height: 35px;
-            color: rgba(51, 51, 51, 1);
-            font-size: 16px;
-            text-align: center;
-            font-family: PingFangSC-Regular;
-        }
-        img{
-            display: block;
-            width: 700px;
-            height: 500px;
-            margin: 50px auto 0;
+            width: 3.27rem;
+            margin-top: .38rem;
         }
     }
 }

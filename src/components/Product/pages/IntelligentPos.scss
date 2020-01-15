@@ -1,141 +1,80 @@
-.IntelligentPosWarpper{
+$img: "../../../assets/images";
+.IntelligentPosWarpper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3.62rem;
+  background: url($img+"/chanpin/chanpin5_1.png") no-repeat top center/100%;
+  .model {
+    width: 3.55rem;
+    padding: 0.2rem 0 0.16rem 0;
+    margin-bottom: 0.15rem;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 0.04rem;
+    align-items: center;
+    h1 {
+      width: 100%;
+      line-height: 0.24rem;
+      color: rgba(91, 121, 255, 1);
+      font-size: 0.2rem;
+      text-align: center;
+      font-family: PingFangSC-Regular;
+      position: relative;
+      &:after {
+        width: 0.18rem;
+        height: 0.02rem;
+        background: #5b79ff;
+        content: "";
+        position: absolute;
+        bottom: -0.09rem;
+        left: 50%;
+        margin-left: -0.09rem;
+      }
+    }
+    h6 {
+      width: 3.24rem;
+      line-height: 24px;
+      color: rgba(51, 51, 51, 1);
+      font-size: 0.14rem;
+      text-align: center;
+      font-family: PingFangSC-Regular;
+      margin-top: 0.19rem;
+    }
+    img {
+      display: block;
+      margin-top: 0.15rem;
+    }
+  }
+  .model1 {
+    .img1 {
+      width: 1.92rem;
+      margin-top: 0.57rem;
+    }
+    .img2 {
+      width: 3.15rem;
+      margin-top: 0.05rem;
+    }
+  }
+  .model2 {
+    img {
+      margin-top: 0.15rem;
+      width: 2.12rem;
+    }
+  }
+  .model3 {
     width: 100%;
-    .title{
-        width: 100%;
-        height: 800px;
-        background: #a51919;
+    height: 3.18rem;
+    background: url($img +'/chanpin/chanpin5_5.png')no-repeat top center/100%;
+    margin-bottom: 0;
+    img{
+        width: 2.41rem;
+        margin: .5rem 0 .15rem 0;
     }
-    .model{
-        width: 100%;
-        .center{
-            width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-        }
+    h6{
+        color:rgba(202,202,202,1);
     }
-    .model1{
-        img{
-            display: block;
-            width: 214px;
-            height: 432px;
-        }
-        .textBox{
-            width: 550px;
-            img{
-                display: block;
-                width: 549px;
-                height: 149px;
-            }
-        }
-        h1{
-            width: 100%;
-            line-height: 24px;
-            color: rgba(91, 121, 255, 1);
-            font-size: 34px;
-            text-align: left;
-            font-family: PingFangSC-Regular;
-            position: relative;
-            &:after{
-                content: '';
-                width: 44px;
-                height: 2px;
-                background: rgba(91, 121, 255, 1);
-                position: absolute;
-                left: 0;
-                bottom: -20px
-            }
-        }
-        h6{
-            width: 483px;
-            height: 140px;
-            line-height: 35px;
-            color: rgba(51, 51, 51, 1);
-            font-size: 16px;
-            text-align: left;
-            font-family: PingFangSC-Regular;
-            margin-top: 50px;
-        }
-    }
-    .model2{
-        img{
-            display: block;
-            width: 465px;
-            height: 352px;
-        }
-        .textBox{
-            width: 442;
-        }
-        h1{
-            width: 100%;
-            line-height: 44px;
-            color: rgba(91, 121, 255, 1);
-            font-size: 34px;
-            text-align: left;
-            font-family: PingFangSC-Regular;
-            position: relative;
-            &:after{
-                content: '';
-                width: 44px;
-                height: 2px;
-                background: rgba(91, 121, 255, 1);
-                position: absolute;
-                left: 0;
-                bottom: -20px
-            }
-        }
-        h6{
-            width: 100%;
-            line-height: 35px;
-            color: rgba(51, 51, 51, 1);
-            font-size: 16px;
-            text-align: left;
-            font-family: PingFangSC-Regular;
-            margin-top: 43px;
-        }
-    }
-    .model3{
-        height: 556px;
-        background: #000;
-        .center{
-            padding-top: 86px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        h1{
-            width: 100%;
-            line-height: 44px;
-            color: rgba(91, 121, 255, 1);
-            font-size: 34px;
-            text-align: center;
-            font-family: PingFangSC-Regular;
-            position: relative;
-            &:after{
-                position: absolute;
-                content: '';
-                width: 44px;
-                height: 2px;
-                background: rgba(91,121,255,1);
-                left: 50%;
-                margin-left: -22px;
-                bottom: -18px;
-            }
-        }
-        img{
-            display: block;
-            width: 295px;
-            height: 64px;
-            margin-top: 140px;
-        }
-        p{
-            width: 100%;
-            line-height: 35px;
-            color: rgba(255, 255, 255, 1);
-            font-size: 16px;
-            text-align: center;
-            font-family: PingFangSC-Regular;
-            margin-top: 98px;
-        }
-    }
+  }
 }

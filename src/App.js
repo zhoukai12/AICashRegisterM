@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './index.scss'
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import ScrollToTop from '@/nav/ScrollToTop'
 import Header from '@/nav/Header'
@@ -16,14 +15,14 @@ class App extends Component {
       isLogin: true
     }
   }
-  componentDidMount(){
+  componentDidMount() {
     console.log(process.env.NODE_ENV)
     console.log(process.env.REACT_APP_SECRET_API)
   }
   render() {
     const token = this.state.isLogin;
     return (
-      <Router >
+      <Router basename='/aibarm'>
         <ScrollToTop>
           <Header></Header>
           <Switch>

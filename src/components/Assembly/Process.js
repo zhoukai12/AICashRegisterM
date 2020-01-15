@@ -9,13 +9,13 @@ class Process extends Component {
         return ( 
             <Fragment >
                 <div className="technologicalProcess">
-                    <div className="technologicalProcess_title">加盟流程</div>
+                    {/* <div className="technologicalProcess_title">加盟流程</div>
                     <div className="list">
                         <div className="item"></div>
                         <div className="item"></div>
                         <div className="item"></div>
                         <div className="item"></div>
-                    </div>
+                    </div> */}
                 </div>
 
             </Fragment>

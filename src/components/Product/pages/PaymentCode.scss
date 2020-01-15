@@ -1,126 +1,100 @@
+$img: '../../../assets/images';
 .paymentcodeWarpper{
     width: 100%;
-    .title{
-        width: 100%;
-        height: 768px;
-        .center{
-            width: 1200px;
-            margin: 0 auto;
-            padding: 245px 0 0 0;
-        }
-        h1{
-            font-weight: normal;
-            width: 432px;
-            color: rgba(0, 0, 0, 1);
-            font-size: 54px;
-            text-align: left;
-            line-height: 75px;
-            font-family: PingFangSC-Regular;
-        }
-        h2{
-            font-weight: normal;
-            width: 100%;
-            height: 33px;
-            color: rgba(51, 51, 51, 1);
-            font-size: 24px;
-            text-align: left;
-            margin-top: 86px;
-            font-family: PingFangSC-Regular;
-        }
-    }
-    .content{
-        width: 100%;
-    }
+    padding-top: 3.64rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url($img +'/chanpin/chanpin2_1.png') no-repeat top center/100%;
     .model{
-        width: 100%;
-        .center{
-            width: 1000px;
-            margin: 0 auto;
-            padding-top: 45px;
-        }
-        .top{
+        width: 3.55rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: .2rem .26rem .44rem;
+        background: #fff;
+        border-radius: .04rem;
+        margin-bottom: .15rem;
+        h1{
             width: 100%;
-            height: 24px;
-            line-height: 24px;
+            line-height: .24rem;
             color: rgba(91, 121, 255, 1);
-            font-size: 34px;
+            font-size: .2rem;
             text-align: center;
             font-family: PingFangSC-Regular;
             position: relative;
             &:after{
                 content: '';
-                width: 44px;
-                height: 3px;
-                background: rgba(91, 121, 255, 1);
+                width: .18rem;
+                height: .02rem;
+                background: #5B79FF;
                 position: absolute;
-                bottom: -20px;
+                bottom: -.1rem;
                 left: 50%;
-                margin-left: -22px;
+                margin-left: -.09rem;
             }
         }
-        .text{
+        h6{
             width: 100%;
-            height: 70px;
-            line-height: 35px;
+            line-height: .24rem;
             color: rgba(51, 51, 51, 1);
-            font-size: 20px;
+            font-size: .14rem;
             text-align: center;
             font-family: PingFangSC-Regular;
-            margin-top: 40px;
+            margin-top: .19rem;
         }
         img{
             display: block;
-            width: 752px;
-            height: 380px;
-            margin: 40px auto 0;
+            width: 3.43rem;
+            margin-top: .15rem;
         }
+
     }
     .model2{
         img{
-            width: 994px;
-            height: 298px;
-            margin: 69px auto 0;
+            margin-top: .29rem;
         }
     }
-    .model3{
-        margin-top: 38px;
-        padding-top: 168px;
-        padding-bottom: 61px;
-        .center{
-            width: 1120px;
-            height: 362px;
-            padding: 43px 29px 0 679px;
+    .item{
+        width: 3.55rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: .42rem 0 .32rem 0;
+        background: url($img +'/chanpin/chanpin2_4.png') no-repeat top center/100%;
+        img{
+            display: block;
+            width: 3.27rem;
+            margin-bottom: .21rem;
         }
-        h2{
-            font-weight: normal;
-            width: 100%;
-            height: 88px;
-            line-height: 44px;
+        h1{
+            width: 3.3rem;
+            line-height: .24rem;
             color: rgba(91, 121, 255, 1);
-            font-size: 34px;
+            font-size: .2rem;
             text-align: left;
             font-family: PingFangSC-Regular;
             position: relative;
             &:after{
                 content: '';
-                width: 44px;
-                height: 3px;
-                background: rgba(91, 121, 255, 1);
+                width: .18rem;
+                height: .02rem;
+                background: #5B79FF;
                 position: absolute;
-                bottom: -10px;
+                bottom: -.1rem;
                 left: 0;
             }
         }
-        h3{
-            font-weight: normal;
-            width: 100%;
-            height: 70px;
-            line-height: 35px;
+        h6{
+            width: 3.3rem;
+            line-height: .24rem;
             color: rgba(51, 51, 51, 1);
-            font-size: 20px;
+            font-size: .14rem;
             text-align: left;
-            margin-top: 21px;
             font-family: PingFangSC-Regular;
+            margin-top: .19rem;
         }
+       
     }
+
 }

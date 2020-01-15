@@ -1,58 +1,51 @@
 import React, { Component } from 'react';
-import {Route,Switch,NavLink,Link} from 'react-router-dom';
-import CashRegister from './pages/CashRegister'//AI吧收银app
-import PaymentCode from './pages/PaymentCode' //收款码
-import BrushPayment from './pages/BrushPayment' //刷脸支付
-import IntelligentPos from './pages/IntelligentPos'   //智能POS机
-import CashRegisterPlugin from './pages/CashRegisterPlugin'  //收银插件
-import DeveloperDocumentation from './pages/DeveloperDocumentation'  //开发者文档
-import ErrorPage from '@/404/ErrorPage'
+import { Link } from 'react-router-dom';
+import img1 from '@/assets/images/chanpin/chanpin1_1.png'
+import img2 from '@/assets/images/chanpin/chanpin1_2.png'
+import img3 from '@/assets/images/chanpin/chanpin1_3.png'
+import img4 from '@/assets/images/chanpin/chanpin1_4.png'
+import img5 from '@/assets/images/chanpin/chanpin1_5.png'
+import SwiperInc from '@/components/Assembly/SwiperInc'
 import '@/assets/css/Product.scss'
 class Product extends Component {
     constructor(props) {
         super(props);
-        this.state = { 
-            isPage: false
+        this.state = {
         }
     }
-    componentDidMount(){
-        console.log(this.props.match.params.id);
-        console.log(!!this.props.match.params.id);
-        if(!!this.props.match.params.id){
-            this.setState({
-                isPage: true
-            })
-        }
+    componentDidMount() {
     }
-    render() { 
-        return ( 
+    render() {
+        return (
             <div className='productWarpper'>
-                <div className="titleTab">
-                    <div className={`tabLi tabLi1 ${this.state.isPage?'':'active'}`}><Link to='/product'>AI吧收银app</Link></div>
-                    <div className={`tabLi tabLi2 ${this.state.isPage?'active':''}`}>收款工具</div>
-                    <ul className="list">
-                        <li><NavLink to='/product/paymentcode' activeClassName="active">收款码</NavLink></li>
-                        <li><NavLink to='/product/brushpayment' activeClassName="active">刷脸支付</NavLink></li>
-                        <li><NavLink to='/product/intelligentpos' activeClassName="active">智能pos机</NavLink></li>
-                        <li><NavLink to='/product/cashregisterplugin' activeClassName="active">收银插件</NavLink></li>
-                        <li><NavLink to='/product/developerdocumentation' activeClassName="active">开发者文档</NavLink></li>
-                    </ul>
+                <SwiperInc></SwiperInc>
+                <div className="model model1">
+                    <img src={img1} alt="" />
+                    <Link to='/product/cashregister'></Link>
+                    <div className="btnBox">
+                        <div className="btn" onClick={()=>{alert('敬请期待~')}}></div>
+                        <div className="btn" onClick={()=>{window.open('http://sxyueshang.com/ai.apk')}}></div>
+                    </div>
                 </div>
-                <div className="content">
-                    <Switch>
-                        <Route path='/product' exact component={CashRegister}></Route>
-                        <Route path='/product/paymentcode' component={PaymentCode}></Route>
-                        <Route path='/product/brushpayment' component={BrushPayment}></Route>
-                        <Route path='/product/intelligentpos' component={IntelligentPos}></Route>
-                        <Route path='/product/cashregisterplugin' component={CashRegisterPlugin}></Route>
-                        <Route path='/product/developerdocumentation' exact component={DeveloperDocumentation}></Route>
-                        <Route path='/product/developerdocumentation/:id' component={DeveloperDocumentation}></Route>
-                        <Route component={ErrorPage}></Route>
-                    </Switch>
+                <div className="model model2">
+                    <Link to='/product/paymentcode'></Link>
+                    <img src={img2} alt="" />
+                </div>
+                <div className="model model3">
+                    <Link to='/product/brushpayment'></Link>
+                    <img src={img3} alt="" />
+                </div>
+                <div className="model model4">
+                    <Link to='/product/intelligentpos'></Link>
+                    <img src={img4} alt="" />
+                </div>
+                <div className="model model5">
+                    <Link to='/product/cashregisterplugin'></Link>
+                    <img src={img5} alt="" />
                 </div>
             </div>
-         );
+        );
     }
 }
- 
+
 export default Product;
